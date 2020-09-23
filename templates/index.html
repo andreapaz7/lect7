@@ -5,7 +5,12 @@
     <body>
         <h1>!!! Hello images !!!</h1>
         <h2> hello template{{ random_num }}</h2>
-        <img width="400px" height="400px" src="/static/shoes.jpg" />
+
+        {% for i in range(0,  random_num ) %}
+             <img width="400px" height="400px" src="/static/shoes.jpg" />
+        {% endfor %}
+    
+
     </body>
 </html>
 
